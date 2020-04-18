@@ -1,0 +1,1 @@
+# beaty.github.io
