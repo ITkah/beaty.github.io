@@ -1,0 +1,51 @@
+.alphabet-wrap-title {
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    letter-spacing: 0.18px;
+    color: #000;
+    font: 400 1.125rem 'Montserrat', sans-serif;
+    margin-bottom: 35px;
+    @media (max-width: 990px) {
+        font-size: 1rem;
+    }
+    a {
+        color: #000;
+        margin: 0 10px;
+        @media (max-width: 990px) {
+            display: block;
+            margin: 10px;
+        }
+    }
+}
+
+.alphabet-main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    .alphabet-box {
+        display: flex;
+        flex-direction: column;
+        p {
+            color: #000;
+            font: 700 1.125rem 'Montserrat', sans-serif;
+            margin-bottom: 10px;
+            @media (max-width: 990px) {
+                font-size: 1rem;
+            }
+        }
+        a {
+            text-decoration: underline;
+            color: #000;
+            font: 400 1.125rem 'Montserrat', sans-serif;
+            margin-bottom: 5px;
+            display: block;
+            @media (max-width: 990px) {
+                font-size: 1rem;
+            }
+        }
+    }
+}

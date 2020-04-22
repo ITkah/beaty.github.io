@@ -5,7 +5,9 @@ header {
 
 .header-top {
     background: #000;
-    padding: 10px 0;
+    @media (max-width: 990px) {
+        padding: 10px 0;
+    }
     .header-top-wrap {
         display: flex;
         align-items: center;
@@ -63,16 +65,18 @@ header {
     .header-top-item {
         font: 400 .8rem "ref";
         color: #fff;
-        margin: 0 10px;
+        padding: 15px 10px;
         transition: .3s;
         @media (max-width: 990px) {
             color: #000;
+            padding: 0;
             font-size: 1rem;
             margin: 10px 0;
             font-weight: 500;
         }
         &:hover {
-            opacity: .8;
+            background: #fff;
+            color: #000;
         }
     }
 }
@@ -325,7 +329,10 @@ nav {
                 text-transform: uppercase;
                 transition: .3s;
                 &:hover {
-                    text-decoration: underline;
+                    color: #fff;
+                    @media (max-width: 990px) {
+                        color: #000;
+                    }
                 }
             }
         }

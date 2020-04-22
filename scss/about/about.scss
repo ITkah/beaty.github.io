@@ -1,0 +1,17 @@
+.about {
+    .text-simple {
+        display: block;
+        margin-bottom: 35px;
+    }
+    .otziv-text {
+        font: 500 1.125rem/30px 'Montserrat', sans-serif;
+        @media (max-width: 990px) {
+            font-size: 1rem;
+        }
+        a {
+            font-weight: 600;
+            color: #000;
+            text-decoration: underline;
+        }
+    }
+}

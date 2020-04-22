@@ -1,0 +1,119 @@
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+    max-width: 600px;
+    @media (max-width: 576px) {
+        max-width: 100%;
+    }
+    .register-title {
+        letter-spacing: 0.3px;
+        font: 400 1.75rem 'Montserrat', sans-serif;
+        margin-bottom: 20px;
+        @media (max-width: 576px) {
+            font-size: 1.25rem;
+        }
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+        @media (max-width: 576px) {
+            width: 98%;
+        }
+        br {
+            @media (max-width: 576px) {
+                display: none;
+            }
+        }
+        .input-box {
+            position: relative;
+            display: flex;
+            @media (max-width: 576px) {
+                flex-direction: column;
+            }
+            &::after {
+                content: '*';
+                right: -20px;
+                top: -5px;
+                color: #ff0000;
+                position: absolute;
+                font: 400 2rem 'Montserrat', sans-serif;
+                @media (max-width: 576px) {
+                    top: auto;
+                    bottom: 0;
+                }
+            }
+            input {
+                border: 1px solid #000000;
+                padding: 7px 15px;
+                font: 400 1rem 'Montserrat', sans-serif;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            label {
+                width: 225px;
+                font: 400 1.125rem 'Montserrat', sans-serif;
+                @media (max-width: 576px) {
+                    font-size: 1rem;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        button {
+            position: relative;
+            left: 148px;
+            padding: 12px 25px;
+            background: #000;
+            color: #fff;
+            width: 100%;
+            box-sizing: border-box;
+            font: 400 .87rem 'Montserrat', sans-serif;
+            border: none;
+            text-align: center;
+            width: 225px;
+            margin-bottom: 20px;
+            left: 148px;
+            @media (max-width: 576px) {
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+    .regist-help {
+        position: relative;
+        left: 148px;
+        @media (max-width: 576px) {
+            left: 0;
+            margin-bottom: 10px;
+        }
+        .back {
+            color: #000;
+            opacity: .6;
+            font: 400 1.125rem 'Montserrat', sans-serif;
+            margin-bottom: 15px;
+            display: block;
+            @media (max-width: 576px) {
+                font-size: 1rem;
+            }
+        }
+        .regist-help-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a {
+                color: #000;
+                font: 400 1.125rem 'Montserrat', sans-serif;
+                @media (max-width: 576px) {
+                    font-size: 1rem;
+                }
+            }
+            a:first-child {
+                padding-right: 20px;
+                margin-right: 20px;
+                border-right: 1px solid gray;
+            }
+        }
+    }
+}
