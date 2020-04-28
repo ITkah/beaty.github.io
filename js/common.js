@@ -4,6 +4,23 @@ $(document).ready(function() {
       $(".header-top-wrap").addClass("header-top-wrap-active");
     });
 
+    $(".checkbox").on("click", function(){
+      $(".postman").removeClass("postman-active");
+    });
+
+    $(".call-postman").on("click", function(){
+      $(".postman").addClass("postman-active");
+    });
+
+    $(".star-disabled").on("click", function(){
+      $(".star-disabled").removeClass("star-active");
+      $(this).toggleClass("star-active");
+    });
+
+    $(".call-mes").on("click", function(){
+      $(".mes").toggle();
+    });
+
     $(".close").on("click", function(){
       $(".header-top-wrap").removeClass("header-top-wrap-active");
     });
@@ -49,5 +66,23 @@ $(document).ready(function() {
             }
           }
         ]
+      });
+
+      $('.popup-with-form').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        focus: '#name',
+    
+        // When elemened is focused, some mobile browsers in some cases zoom in
+        // It looks not nice, so we disable it:
+        callbacks: {
+          beforeOpen: function() {
+            if($(window).width() < 700) {
+              this.st.focus = false;
+            } else {
+              this.st.focus = '#name';
+            }
+          }
+        }
       });
 });

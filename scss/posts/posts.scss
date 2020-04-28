@@ -1,0 +1,58 @@
+.posts-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 45px;
+    .posts-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        padding-bottom: 45px;
+        border-bottom: 1px solid #a0a0a0;
+        .post-info {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 30px;
+            align-items: center;
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr;
+                grid-gap: 15px;
+            }
+            .data {
+                color: #000;
+                font: 400 1rem 'Montserrat', sans-serif;
+                @media (max-width: 768px) {
+                    font-size: .9rem;
+                }
+            }
+            .title {
+                color: #000;
+                font: 400 1.5rem 'Montserrat', sans-serif;
+                text-decoration: underline;
+                @media (max-width: 768px) {
+                    font-size: 1.125rem;
+                }
+            }
+        }
+        .post-content {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 30px;
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr;
+                grid-gap: 20px;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+                @media (max-width: 768px) {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            p {
+                font: 400 .87rem/24px 'Montserrat', sans-serif;
+            }
+        }
+    }
+}

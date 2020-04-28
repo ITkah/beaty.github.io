@@ -1,0 +1,107 @@
+.contact {
+    margin-top: 50px;
+    @media (max-width: 768px) {
+        margin-top: 30px;
+    }
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-box {
+    padding: 35px;
+    border: 2px solid #010101;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    @media (max-width: 990px) {
+        padding: 20px;
+    }
+    @media (max-width: 768px) {
+        padding: 15px;
+    }
+    .contact-title {
+        letter-spacing: 0.18px;
+        font: 500 1rem 'Montserrat', sans-serif;
+        position: absolute;
+        background: #fff;
+        padding: 0 30px;
+        top: -10px;
+        @media (max-width: 576px) {
+            font-size: .95rem;
+            padding: 0 15px;
+        }
+    }
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+.contact-link-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    img {
+        margin-right: 12px;
+    }
+    a {
+        font: 400 .95rem "ref";
+        color: #000;
+        @media (max-width: 990px) {
+            font-size: .9rem;
+        }
+    }
+}
+
+.contact-text {
+    font: 400 1rem/30px 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+    @media (max-width: 990px) {
+        font-size: .9rem;
+    }
+}
+
+.contact-adresss {
+    font: 600 1rem/26px 'Montserrat', sans-serif;
+    position: relative;
+    @media (max-width: 990px) {
+        font-size: .9rem;
+    }
+}
+
+.contact-link-box:last-child {
+    margin: 0;
+}
+
+
+
+.contact-box:nth-child(5) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    @media (max-width: 990px) {
+        grid-column-start:1;
+        grid-column-end:3;
+    }
+    @media (max-width: 768px) {
+        grid-column-start:1;
+        grid-column-end:1;
+    }
+}
+
+.contact-box:last-child {
+    border: none;
+    padding: 0;
+}
