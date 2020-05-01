@@ -299,3 +299,188 @@
         }
     }
 }
+
+.bug-modal {
+    position: relative;
+    max-width: 760px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #000;
+    @media (max-width: 990px){
+        margin: 5px auto;
+    }
+    .orders-title {
+        padding: 15px 10px;
+        font: 600 1.125rem 'Montserrat', sans-serif;
+        @media (max-width: 990px) {
+            border-bottom: 1px solid #000;
+        }
+    }
+    .title-mob {
+        display: none;
+        @media (max-width: 576px) {
+            display: block;
+            font: 500 .87rem 'Montserrat', sans-serif;
+        }
+    }
+    .orders-title-wrap {
+        display: grid;
+        grid-template-columns: 6fr 2fr 1fr;
+        padding: 8px 10px;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        grid-gap: 15px;
+        @media (max-width: 576px) {
+            display: none;
+        }
+        p {
+            font: 400 .87rem "ref";
+        }
+    }
+    .orders-info-wrap {
+        display: grid;
+        grid-template-columns: 6fr 2fr 1fr;
+        padding: 10px;
+        grid-gap: 15px;
+        border-bottom: 1px solid #000;
+        @media (max-width: 576px) {
+            padding: 15px 10px;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+        .order-info-box {
+            display: flex;
+            align-items: center;
+            position: relative;
+            @media (max-width: 576px) {
+                flex-direction: column;
+            }
+        }
+        .close,.heart {
+            margin-right: 10px;
+            @media (max-width: 576px) {
+                position: absolute;
+                top: -5px;
+                margin: 0;
+            }
+            img {
+                height: 15px;
+                @media (max-width: 576px) {
+                    height: 15px;
+                }
+            }
+        }
+        .close {
+            @media (max-width: 576px) {
+                right: 3px;
+            }
+        }
+        .heart {
+            @media (max-width: 576px) {
+                left: 0;
+            }
+            img {
+                @media (max-width: 576px) {
+                    height: 15px;
+                }
+            }
+        }
+        .item {
+            height: 65px;
+            max-width: 100%;
+            object-fit: contain;
+            margin-right: 10px;
+        }
+        .order-info-text {
+            display: flex;
+            flex-direction: column;
+            .name {
+                font: 600 .75rem "ref";
+                margin-bottom: 5px;
+            }
+            .artikle {
+                margin-bottom: 10px;
+                font: 400 .75rem "ref";
+            }
+            .price {
+                font: 600 .75rem "ref";
+            }
+        }
+        .order-info-col {
+            @media (max-width: 576px) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .num-col {
+                width: 60px;
+                text-align: center;
+                font: 600 .75rem "ref";
+                border: 1px solid #000000;
+                padding: 5px;
+            }
+        }
+        .order-info-price {
+            @media (max-width: 576px) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            p {
+                font: 600 .87rem "ref";
+            }
+        }
+    }
+    .order-other-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #bfbfbf;
+        padding: 8px 28px;
+        border-top: 1px solid #000;
+        @media (max-width: 576px) {
+           padding: 10px;
+        }
+        p {
+            font: 500 .87rem 'Montserrat', sans-serif;
+        }
+    }
+    .sale {
+        p {
+            color: #fff;
+        }
+    }
+    .all {
+        margin-bottom:10px;
+        border-bottom: 1px solid #000;
+        @media (max-width: 576px) {
+            margin: 0;
+        }
+        p {
+            font-weight: 700;
+        }
+    }
+    .modal-order-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        @media (max-width: 576px) {
+            flex-direction: column;
+        }
+        .back {
+            font: 500 .87rem 'Montserrat', sans-serif;
+            text-decoration: underline;
+            color: #000;
+            @media (max-width: 576px) {
+                margin-bottom: 20px;
+            }
+        }
+        .but-but {
+            padding: 10px 20px;
+            font: 500 .87rem 'Montserrat', sans-serif;
+            background: #313131;
+            color: #fff;
+        }
+    }
+}

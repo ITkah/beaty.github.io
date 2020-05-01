@@ -313,6 +313,9 @@
             display: flex;
             align-items: center;
             position: relative;
+            @media (max-width: 576px) {
+                flex-direction: column;
+            }
         }
         .close,.heart {
             margin-right: 10px;
@@ -324,16 +327,19 @@
             img {
                 height: 15px;
                 @media (max-width: 576px) {
-                    height: 12px;
+                    height: 15px;
                 }
             }
         }
         .close {
             @media (max-width: 576px) {
-                right: -2px;
+                right: -1px;
             }
         }
         .heart {
+            @media (max-width: 576px) {
+                left: 0;
+            }
             img {
                 @media (max-width: 576px) {
                     height: 15px;

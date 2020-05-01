@@ -38,6 +38,9 @@ p {
 
 .margin {
     margin-bottom: 90px;
+    @media (max-width: 576px) {
+        margin-bottom: 60px;
+    }
 }
 
 button,

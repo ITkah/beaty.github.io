@@ -4,6 +4,10 @@ $(document).ready(function() {
       $(".header-top-wrap").addClass("header-top-wrap-active");
     });
 
+    $(".call-lk").on("click", function(){
+      $(".lk-hide").toggle();
+    });
+
     $(".checkbox").on("click", function(){
       $(".postman").removeClass("postman-active");
     });
@@ -29,6 +33,12 @@ $(document).ready(function() {
       $("nav").slideToggle(200);
     });
 
+    $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+      $(this)
+        .addClass('active').siblings().removeClass('active')
+        .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+    });
+  
     $('.home-slider-call').slick({
         dots: false,
         arrows: true,

@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/slick.css">
         <link rel="stylesheet" href="css/magnific-popup.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     </head>
@@ -19,7 +20,7 @@
                     <div class="container">
                         <img src="img/icon/menu.svg" class="call-menu" alt="menu">
                         <a href="#" class="call-catalog">Каталог</a>
-                        <a href="#" class="basket-mob">
+                        <a href="#bug-modal" class="basket-mob popup-with-form">
                             <img src="img/icon/basket-mob.svg" class="basket" alt="basket">
                             <span>1</span>
                         </a>
@@ -87,7 +88,7 @@
                                     <a href="#consult" class="popup-with-form">ПРОФЕССИОНАЛЬНАЯ КОНСУЛЬТАЦИЯ</a>
                                 </div>
                                 <div class="btn-bug">
-                                    <a href="#">КОРЗИНА / <span>0</span></a>
+                                    <a href="#bug-modal" class="popup-with-form">КОРЗИНА / <span>0</span></a>
                                 </div>
                             </div>
                         </div>
@@ -409,6 +410,89 @@
             </footer>
         </div>
 
+
+        <div id="bug-modal" class="mfp-hide white-popup-block bug-modal">
+            <div class="orders-title">
+                <p>Мой заказ</p>
+            </div>
+            <div class="orders-title-wrap">
+                <p>Имя</p>
+                <p>Кол-во</p>
+                <p>Сумма</p>
+            </div>
+            <div class="orders-info-wrap">
+                <div class="order-info-box">
+                    <a href="#" class="close">
+                        <img src="img/icon/close.svg" alt="close">
+                    </a>
+                    <a href="#" class="heart">
+                        <img src="img/icon/heart.svg" alt="heart">
+                    </a>
+                    <img src="img/item.png" class="item" alt="item">
+                    <div class="order-info-text">
+                        <p class="name">Осветляющий крем с витамином С Skinfood Yuja Oil C cream</p>
+                        <p class="artikle">Артикул: 0284</p>
+                        <p class="price">Цена: 625 грн</p>
+                    </div>
+                </div>
+                <div class="order-info-col">
+                    <p class="title-mob">Кол-во</p>
+                    <input type="number" class="num-col" value="1">
+                </div>
+                <div class="order-info-price">
+                    <p class="title-mob">Цена</p>
+                    <p>
+                        625 грн
+                    </p>
+                </div>
+            </div>
+            <div class="orders-info-wrap">
+                <div class="order-info-box">
+                    <a href="#" class="close">
+                        <img src="img/icon/close.svg" alt="close">
+                    </a>
+                    <a href="#" class="heart">
+                        <img src="img/icon/heart.svg" alt="heart">
+                    </a>
+                    <img src="img/item.png" class="item" alt="item">
+                    <div class="order-info-text">
+                        <p class="name">Осветляющий крем с витамином С Skinfood Yuja Oil C cream</p>
+                        <p class="artikle">Артикул: 0284</p>
+                        <p class="price">Цена: 625 грн</p>
+                    </div>
+                </div>
+                <div class="order-info-col">
+                    <p class="title-mob">Кол-во</p>
+                    <input type="number" class="num-col" value="1">
+                </div>
+                <div class="order-info-price">
+                    <p class="title-mob">Цена</p>
+                    <p>
+                        625 грн
+                    </p>
+                </div>
+            </div>
+            <div class="order-other-box">
+                <p>Стоимость товара</p>
+                <p>1240 грн</p>
+            </div>
+            <div class="order-other-box">
+                <p>Стоимость товара</p>
+                <p>1240 грн</p>
+            </div>
+            <div class="order-other-box sale">
+                <p>Стоимость товара</p>
+                <p>1240 грн</p>
+            </div>
+            <div class="order-other-box all">
+                <p>Стоимость товара</p>
+                <p>1240 грн</p>
+            </div>
+            <div class="modal-order-wrap">
+                <a href="#" class="back">ВЕРНУТЬСЯ К ПОКУПКАМ</a>
+                <a href="#" class="but-but">ОФОРМИТЬ ЗАКАЗ</a>
+            </div>
+        </div>
 
         <div id="sale" class="mfp-hide white-popup-block sale-modal">
             <div class="box-title">
