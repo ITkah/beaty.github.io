@@ -4,8 +4,17 @@ $(document).ready(function() {
       $(".header-top-wrap").addClass("header-top-wrap-active");
     });
 
+    $(".active-title").on("click", function(){
+      $(this).next(".checkbox-wrap").slideToggle(200);
+    });
+
     $(".call-lk").on("click", function(){
       $(".lk-hide").toggle();
+    });
+
+    $(".heart-disable").on("click", function(){
+      $(this).children(".disabled").toggleClass("disabled-click");
+      $(this).children(".active").toggleClass("active-click");
     });
 
     $(".checkbox").on("click", function(){
@@ -38,7 +47,66 @@ $(document).ready(function() {
         .addClass('active').siblings().removeClass('active')
         .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
     });
+
+    $(".watch-coment").on("click", function(e){
+      e.preventDefault();
+      $(".item-coment-box").show();
+    });
+
+    function f_acc(){
+      $('.accordeon .acc-body').not($(this).next()).slideUp(200);
+      $(this).next().slideToggle(200);
+    }
   
+    $('.accordeon .acc-head').on('click', f_acc);
+
+
+    $('.main-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,               
+      dots: false,
+      arrows:false,
+      infinite: true,
+      asNavFor: '.thumb-slider'
+    });  
+    
+    $('.thumb-slider').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,               
+      dots: false,
+      infinite: true,
+      prevArrow:'<button class="slick-prev"></button>',
+      nextArrow:'<button class="slick-next"></button>',
+      asNavFor: '.main-slider',
+      focusOnSelect: true,
+      centerMode: false,
+      responsive: [
+        {
+          breakpoint: 990,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2,
+
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow:3,
+            slidesToScroll: 3,
+           
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          }
+        }
+      ]
+    }); 
+
     $('.home-slider-call').slick({
         dots: false,
         arrows: true,
