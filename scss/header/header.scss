@@ -1,6 +1,9 @@
 header {
     position: relative;
     z-index: 999;
+    .container {
+        position: relative;
+    }
 }
 
 .header-top {

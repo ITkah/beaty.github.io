@@ -2,6 +2,8 @@
 header {
   position: relative;
   z-index: 999; }
+  header .container {
+    position: relative; }
 
 .header-top {
   background: #000;
@@ -849,8 +851,15 @@ nav {
   .rewiev .star-rating__wrap {
     position: relative;
     margin-right: 15px; }
+    .rewiev .star-rating__wrap label {
+      height: 30px;
+      width: 30px; }
     .rewiev .star-rating__wrap input {
+      height: 0;
+      width: 0;
       opacity: 0;
+      left: -3px;
+      top: -5px;
       position: absolute; }
   .rewiev .star-disabled {
     cursor: pointer; }
@@ -2408,6 +2417,8 @@ nav {
           margin-right: 10px; }
         .item-wrapper .item-info-wrap .accordeon .item-comment-title .star i {
           color: #000; }
+        .item-wrapper .item-info-wrap .accordeon .item-comment-title .star .star-disabled {
+          color: #bfbfbf; }
 
 .acc-body {
   display: none; }
@@ -2999,6 +3010,41 @@ nav {
             margin: 0 auto; } }
       .posts-container .posts-box .post-content p {
         font: 400 .87rem/24px 'Montserrat', sans-serif; }
+
+.post-item-title-xl {
+  font: 400 2.5rem 'Montserrat', sans-serif;
+  letter-spacing: 0.48px;
+  margin-bottom: 30px; }
+  @media (max-width: 990px) {
+    .post-item-title-xl {
+      font-size: 2rem; } }
+  @media (max-width: 576px) {
+    .post-item-title-xl {
+      font-size: 1.75rem;
+      margin-bottom: 15px; } }
+
+.post-item-title-sm {
+  font: 600 1.5rem 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  margin: 25px 0; }
+  @media (max-width: 990px) {
+    .post-item-title-sm {
+      font-size: 1.2rem;
+      margin: 20px 0; } }
+
+.post-img {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  max-width: 100%;
+  margin-top: 60px; }
+  @media (max-width: 990px) {
+    .post-img {
+      margin-top: 30px; } }
+
+.post-item .text-simple {
+  line-height: 24px;
+  font-size: .95rem; }
 
 footer {
   background: #000; }

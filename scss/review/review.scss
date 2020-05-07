@@ -61,8 +61,16 @@
     .star-rating__wrap {
         position: relative;
         margin-right: 15px;
+        label {
+            height: 30px;
+            width: 30px;
+        }
         input {
+            height: 0;
+            width: 0;
             opacity: 0;
+            left: -3px;
+            top: -5px;
             position: absolute;
         }
     }

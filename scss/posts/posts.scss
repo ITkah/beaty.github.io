@@ -56,3 +56,45 @@
         }
     }
 }
+
+
+.post-item-title-xl {
+    font: 400 2.5rem 'Montserrat', sans-serif;
+    letter-spacing: 0.48px;
+    margin-bottom: 30px;
+    @media (max-width: 990px) {
+        font-size: 2rem;
+    }
+    @media (max-width: 576px) {
+        font-size: 1.75rem;
+        margin-bottom: 15px;
+    }
+}
+
+.post-item-title-sm {
+    font: 600 1.5rem 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin: 25px 0;
+    @media (max-width: 990px) {
+        font-size: 1.2rem;
+        margin: 20px 0;
+    }
+}
+
+.post-img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+    margin-top: 60px;
+    @media (max-width: 990px) {
+        margin-top: 30px;
+    }
+}
+
+.post-item {
+    .text-simple {
+        line-height: 24px;
+        font-size: .95rem;
+    }
+}
