@@ -14,4 +14,30 @@
             text-decoration: underline;
         }
     }
+
+}
+
+.about-container {
+    h2 {
+        font: 600 1.5rem 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        position: relative;
+        text-align: left;
+        @media (max-width: 990px) {
+            font-size: 1.4rem;
+        }
+    }
+    p {
+        font: 400 1.125rem/30px 'Montserrat', sans-serif;
+        letter-spacing: 0.17px;
+        @media (max-width: 990px) {
+            font-size: 1rem;
+        }
+    }
+    a {
+        font-weight: 600;
+        color: #000;
+        text-decoration: underline;
+    }
 }

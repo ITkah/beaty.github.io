@@ -12,46 +12,54 @@
     }
 }
 
-.title-gray {
-    letter-spacing: 0.36px;
-    font: 600 2.25rem 'Montserrat', sans-serif;
-    color: #a19f9f;
-    margin-bottom: 10px;
-    @media (max-width: 990px) {
-        font-size: 1.5rem;
+.dostavka {
+    h3 {
+        font: 600 1.2rem 'Montserrat', sans-serif;
+        color: #000;
+        display: flex;
+        margin-bottom: 5px;
     }
-}
 
-.dostavka-title-xl {
-    font: 600 1.5rem 'Montserrat', sans-serif;
-    color: #000;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-}
-
-.dostavka-title-sm {
-    font: 600 1.2rem 'Montserrat', sans-serif;
-    color: #000;
-    display: flex;
-    margin-bottom: 5px;
-    span {
+    h3:first-child {
         position: relative;
-        bottom: -7px;
-        margin-right: 5px;
-        background: #000;
-        height: 10px;
-        width: 10px;
-        border-radius: 50%;
-        display: block;
+        &::before {
+            content: '';
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            background: #000;
+            position: absolute;
+            display: block;
+        }
     }
+    
+    h2 {
+        font: 600 1.5rem 'Montserrat', sans-serif;
+        color: #000;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    p{
+        font: 400 1.125rem/30px 'Montserrat', sans-serif;
+        color: #000;
+        margin-bottom: 25px;
+        @media (max-width: 990px) {
+            font-size: 1rem;
+        }
+    }
+
 }
 
-.dostavka-text {
-    font: 400 1.125rem/30px 'Montserrat', sans-serif;
-    color: #000;
-    margin-bottom: 25px;
-    @media (max-width: 990px) {
-        font-size: 1rem;
+.dostavka-gray-wrap {
+    h1 {
+        letter-spacing: 0.36px;
+        font: 600 2.25rem 'Montserrat', sans-serif;
+        color: #a19f9f;
+        margin-bottom: 10px;
+        @media (max-width: 990px) {
+            font-size: 1.5rem;
+        }
     }
 }
 
