@@ -18,10 +18,8 @@
         color: #000;
         display: flex;
         margin-bottom: 5px;
-    }
-
-    h3:first-child {
         position: relative;
+        padding-left: 10px;
         &::before {
             content: '';
             height: 5px;
@@ -30,9 +28,12 @@
             background: #000;
             position: absolute;
             display: block;
+            left: 0;
+            bottom: 45%;
         }
     }
-    
+
+
     h2 {
         font: 600 1.5rem 'Montserrat', sans-serif;
         color: #000;

@@ -1174,14 +1174,14 @@ nav {
     color: #000;
     text-decoration: underline; }
 
-.about-container h2 {
+.about-container h2, .about-container h3 {
   font: 600 1.5rem 'Montserrat', sans-serif;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin: 20px 0;
   position: relative;
   text-align: left; }
   @media (max-width: 990px) {
-    .about-container h2 {
+    .about-container h2, .about-container h3 {
       font-size: 1.4rem; } }
 
 .about-container p {
@@ -1231,18 +1231,19 @@ nav {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 5px; }
-
-.dostavka h3:first-child {
-  position: relative; }
-  .dostavka h3:first-child::before {
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 10px; }
+  .dostavka h3::before {
     content: '';
     height: 5px;
     width: 5px;
     border-radius: 50%;
     background: #000;
     position: absolute;
-    display: block; }
+    display: block;
+    left: 0;
+    bottom: 45%; }
 
 .dostavka h2 {
   font: 600 1.5rem 'Montserrat', sans-serif;
