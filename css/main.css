@@ -3038,40 +3038,40 @@ nav {
       .posts-container .posts-box .post-content p {
         font: 400 .87rem/24px 'Montserrat', sans-serif; }
 
-.post-item-title-xl {
+.post-item h1, .post-item h2, .post-item h3 {
   font: 400 2.5rem 'Montserrat', sans-serif;
   letter-spacing: 0.48px;
   margin-bottom: 30px; }
   @media (max-width: 990px) {
-    .post-item-title-xl {
+    .post-item h1, .post-item h2, .post-item h3 {
       font-size: 2rem; } }
   @media (max-width: 576px) {
-    .post-item-title-xl {
+    .post-item h1, .post-item h2, .post-item h3 {
       font-size: 1.75rem;
       margin-bottom: 15px; } }
 
-.post-item-title-sm {
+.post-item h4, .post-item h5 {
   font: 600 1.5rem 'Montserrat', sans-serif;
   text-transform: uppercase;
   margin: 25px 0; }
   @media (max-width: 990px) {
-    .post-item-title-sm {
+    .post-item h4, .post-item h5 {
       font-size: 1.2rem;
       margin: 20px 0; } }
 
-.post-img {
+.post-item p {
+  line-height: 24px;
+  font-size: .95rem; }
+
+.post-item img {
   display: block;
   margin: 0 auto;
   height: auto;
   max-width: 100%;
   margin-top: 60px; }
   @media (max-width: 990px) {
-    .post-img {
+    .post-item img {
       margin-top: 30px; } }
-
-.post-item .text-simple {
-  line-height: 24px;
-  font-size: .95rem; }
 
 footer {
   background: #000; }
